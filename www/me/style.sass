@@ -1,0 +1,253 @@
+$varBackgroundColor: #fff
+$varFontFamily: Inconsolata
+$varColorHiedeTitle: #fff
+$varSubHeadingColro: #6c63ff
+$varBlackColor: #000
+$varVioletColor: #6c63ff
+
+html
+    background-color: $varBackgroundColor
+    font-family: $varFontFamily
+    margin: 0%
+
+body 
+    margin: 0%
+    padding: 0%
+
+// delete the scroll bar
+::-webkit-scrollbar 
+    display: none
+
+
+.cvContainer
+
+    .coverContainer
+        background-color: $varBlackColor
+
+        height: 50%
+        width: 100%
+        h1
+            margin: 0%
+            font-size: 60px
+            padding: 5% 10% 0% 10%
+            color: $varColorHiedeTitle
+        p 
+            margin: 0%
+            font-size: 20px
+            padding: 0% 10% 3% 10%
+            color: $varSubHeadingColro
+
+// the ablitis styles
+.titleText
+    display: flex
+    flex-direction: column
+    margin: 0% 10% 0% 10%
+    .firstSectionText
+        display: flex
+        flex-direction: column
+        // background-color: $varVioletColor
+        padding: 0%
+        // h2 
+        //     margin: 0%
+        
+    h2
+        margin: 3% 0% 0% 0%
+        
+    p      
+        margin: 1% 0% 0.5% 0%
+        font-weight:  bold
+        font-size: 15px
+
+.mainContainer
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .firstSubContainer  
+        display: flex 
+        flex-direction: row
+        justify-content: center
+        margin: 0% 5% 0% 5%
+        flex-wrap: wrap
+        width: 100%
+        .card 
+            position: relative 
+            cursor: pointer 
+            justify-content: space-between
+            clear: both
+            margin: 0% 2% 0% 2%
+            
+            .face 
+                width: 300px 
+                height: 200px 
+                transition: 0.5s 
+                
+                &.face1 
+                    position: relative 
+                    background: #000
+                    display: flex 
+                    justify-content: center 
+                    align-items: center 
+                    z-index: 1 
+                    transform: translateY(100px) 
+                    .content
+                        margin: 0% 2% 0% 2% 
+                        // opacity: 0.2 
+                        img
+                            opacity: 0.5
+                        h3
+                            opacity: 1
+                            
+                        transition: 0.5s 
+                        
+                        img 
+                            max-width: 100px 
+                        h3 
+                            margin: 10% 0% 10% 0% 
+                            padding: 0 
+                            color: $varVioletColor 
+                            text-align: center 
+                            font-size: 1.5em
+                        #developer
+                            margin: 10% 0% 10% -10% 
+                &.face2 
+                    position: relative 
+                    background: #fff 
+                    display: flex 
+                    justify-content: center 
+                    align-items: center 
+                    padding: 20px 
+                    box-sizing: border-box 
+                    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8) 
+                    transform: translateY(-100px) 
+                    .content 
+                        p 
+                            margin: 0 
+                            padding: 0 
+                        a 
+                            margin: 15px 0 0 
+                            display: inline-block 
+                            text-decoration: none 
+                            font-weight: 900 
+                            color: #000 
+                            padding: 5px 
+                            border: 1px solid #000
+                            &:hover 
+                                background: #000
+                                color: #fff 
+            &:hover 
+                .face 
+                    &.face1 
+                        background: #6c63ff
+                        transform: translateY(0) 
+                        img
+                            opacity: 1
+                        h3
+                            opacity: 1
+                            color: #fff
+                    &.face2 
+                        transform: translateY(0) 
+    .diagramContainer
+        display: flex
+        flex-direction: row
+        justify-content: center 
+        flex-wrap: wrap   
+
+        margin: 0% 0% 5% 0%    
+        .detailPage
+            p
+                display: none 
+//seting for the mobily app
+@media only screen and (max-width: 825px)
+    html
+        width: 100%
+    .titleText
+        .firstSectionText
+            h2
+                font-size: 100%
+                margin: 3% 0% 0% 0%
+        
+            p      
+                margin: 1% 0% 0.5% 0%
+                font-weight:  bold
+                font-size: 80%
+                text-align: justify
+            span
+                display: none
+
+    .cvContainer
+        .coverContainer
+            
+            background-color: $varBlackColor
+
+            height: 50%
+            width: 100%
+            
+            h1
+                margin: 0%
+                font-size: 60px
+                padding: 5% 10% 0% 10%
+                color: $varColorHiedeTitle
+                font-size: 100%
+            p 
+                margin: 0%
+                font-size: 20px
+                padding: 0% 10% 3% 10%
+                color: $varSubHeadingColro
+                font-size: 65%
+    .mainContainer
+        .firstSubContainer  
+            margin: 0% 5% 0% 5%
+            width: 100%
+            .card 
+                margin: 0% 2% 0% 2%
+                
+                .face 
+                    width: 250px 
+                    height: 150px 
+                    transition: 0.5s 
+                    
+                    &.face1 
+                        position: relative 
+                        background: #000
+                        display: flex 
+                        justify-content: center 
+                        align-items: center 
+                        z-index: 1 
+                        transform: translateY(100px) 
+                        .content
+                            margin: 0% 2% 0% 2% 
+                            // opacity: 0.2 
+                            img 
+                                max-width: 80px 
+                            h3 
+                                margin: 10% 0% 10% 0% 
+                                padding: 0 
+                                color: $varVioletColor 
+                                text-align: center 
+                                font-size: 1.5em
+                            #developer
+                                margin: 10% 0% 10% -10% 
+                    &.face2  
+                        padding: 20px 
+                        box-sizing: border-box 
+                        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8) 
+                        transform: translateY(-50px) 
+                        .content 
+                            p 
+                                margin: 0 
+                                padding: 0 
+                                font-size: 80%
+                            a 
+                                margin: 15px 0 0 
+                                font-weight: 900 
+                                padding: 5px 
+                                border: 1px solid #000
+    h2
+        font-size: 100%
+    .diagramContainer
+        canvas
+            display: none
+        .detailPage
+            p
+                display: block!important

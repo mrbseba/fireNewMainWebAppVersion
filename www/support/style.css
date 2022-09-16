@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  font-family: Inconsolata;
+  margin: 0%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.moneyTransfer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0% 10% 0% 10%;
+}
+.moneyTransfer .paypalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 15px;
+  padding: 1% 2% 1% 2%;
+  margin: 2% 0% 0% 0%;
+}
+.moneyTransfer .paypalContainer .paypalLogo {
+  display: flex;
+  justify-content: center;
+  margin: 10% 0%;
+}
+.moneyTransfer .paypalContainer a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 8px;
+  padding: 1% 8% 2.5% 8%;
+}
+.moneyTransfer .paypalContainer a:hover {
+  background-color: #6c63ff;
+}
+
+.rowDelimitator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0% 10% 0% 10%;
+}
+.rowDelimitator hr {
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  border-color: #000;
+  margin: 4% 0% 0% 0%;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4%;
+  padding: 5% 0%;
+}
+
+.card {
+  padding: 30px 50px 30px 50px;
+  border: 2px solid rgb(108, 99, 255);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 25px;
+}
+
+.card_title {
+  font-weight: normal;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.pricing {
+  font-weight: normal;
+  font-size: 96px;
+}
+.pricing .small {
+  font-size: 16px;
+}
+
+hr {
+  margin-top: 10%;
+  color: #000;
+}
+
+.features {
+  margin: 40px 0;
+  list-style-position: inside;
+}
+.features li {
+  padding-bottom: 10px;
+}
+
+a.cta_btn {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  background: #000;
+  border-radius: 29px;
+  padding: 20px 0;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: background 0.3s ease;
+}
+a.cta_btn:hover {
+  background: rgb(108, 99, 255);
+}
+
+@media only screen and (max-width: 1024px) {
+  .backgroundElement svg {
+    display: none;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+  }
+  .moneyTransfer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0% 10% 3% 10%;
+  }
+  .moneyTransfer .paypalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 2%;
+  }
+  .moneyTransfer .paypalContainer .paypalLogo {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0%;
+  }
+  .moneyTransfer .paypalContainer a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 8px;
+    padding: 1% 6% 2% 6%;
+    margin-bottom: 2%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .moneyTransfer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0% 10% 3% 10%;
+  }
+  .moneyTransfer .paypalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 5%;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2%;
+    padding-bottom: 25%;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+  body {
+    font-size: 14px;
+  }
+  .card {
+    margin: 0% 6% 0% 6%;
+    padding: 30px;
+  }
+  .card_title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .pricing {
+    font-size: 52px;
+  }
+  hr {
+    margin-top: 50px;
+    color: #000;
+  }
+  a.cta_btn {
+    font-size: 18px;
+  }
+  .features li {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

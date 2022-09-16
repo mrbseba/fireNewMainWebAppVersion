@@ -1,0 +1,37 @@
+body {
+  background: #ECEFF1;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.mainContainer {
+  margin: 0% 10% 0% 10%;
+  display: flex;
+  flex-direction: column;
+}
+.mainContainer .subFirstMain {
+  border-style: solid;
+  border-color: #9e5252;
+  padding: 1% 2% 1% 2%;
+}
+.mainContainer .subFirstMain h1 {
+  line-height: 0%;
+}
+.mainContainer .subFirstMain p {
+  font-style: italic;
+  font-size: 20px;
+}
+.mainContainer .subSecondMain p {
+  font-size: 20px;
+}
+.mainContainer .menu a {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0.5% 1% 0.5% 1%;
+  margin-right: 1%;
+  border-style: solid;
+  border-width: 0.2%;
+  border-radius: 18px;
+  text-decoration: none;
+  color: #000;
+}/*# sourceMappingURL=style.css.map */
